@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web</title>
+</head>
+<body>
+    <h1>Programação Web</h1>
+    <div id="adiv">
+        Loadind...
+    </div>
+    
+    <script>
+        function construirTabela(vetor){
+            let inicio = '<table border= "1">'
+            let final = '</table>'
+            let corpo = ''
+            for( let bebidas of vetor){
+                corpo = `${corpo} <tr> <td> ${bebidas} </td> </tr>`
+            }
+            return `${inicio} ${corpo} ${final}`
+        }
+
+        function mostrarTabela(){
+            let objs = ["Item 1","Item 2", "Item3"]
+            let divs = document.getElementById("adiv")
+
+        }
+    </script>
+</body>
+</html>

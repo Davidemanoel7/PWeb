@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+p{
+    font: normal normal 1.2em 'sans-serif';
+    margin: 8px 16px;
+}
+
+a{
+    color:#f0f0f0;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 133, 51);
+}
+
+p.verso{
+    color: #b9daf5;
+}
+
+p.mote{
+    color:#f79797 ;   
+}
+
+.linkPoeta{
+    font-weight: bold;
+    color:#3da8ff;
+}
+
+.linkPoeta:hover{
+    color: whitesmoke;
+}
+
+.linkPoeta:visited{
+    font-weight: bold;
+    color: #004985;
+}
+
+.poeta > img{
+    border-radius: 60%;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 16px;
+    color: #ffc039;
+}
+
+
+table{
+    color:#f0f0f0;
+    font-weight: bold;
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+
+th{
+    font-size: 1.3em;
+    color:#ffc039;
+    padding: 16px 24px;
+    border: 2px solid #ffc039;
+}
+
+td{
+    border: 2px solid #ffc039;
+    padding: 4px 4px;
+}
+
+#botao{
+    display: flex;
+    align-items: center;
+}
+
+.bt{
+    margin: 4px auto;
+    padding: 8px 24px;
+    border-radius: 5px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font: normal bold 1.2em 'Arial';
+    background-color: #ffc039;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.397)
+}
