@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="test1">
+        <h1>
+            Guinness
+        </h1>
+    </div>
+    <div>
+        <button id="botaoCarregar">
+            Carregar
+        </button>
+    </div>    
+</body>
+
+    <script>
+        function carregarDiv(){
+            var div = document.getElementById("test1");
+            if (div.style.visibility ==="visible"){
+                div.style.visibility = "hidden";
+            } else{
+                div.style.visibility = "visible"
+            }
+        }
+        
+        let botao = document.getElementById("botaoCarregar")
+        botao.addEventListener("click",carregarDiv)
+
+    </script>
+
+</html>
+
+<!--
+    function carregarDiv(){
+            var div = document.getElementById("test1");
+            if (div.style.display ==="block"){
+                div.innerHTML = ``;
+                div.style.display = "none";
+            } else{
+                div.innerHTML = `<h1>Guinness</h1>`;
+                div.style.display = "block"
+            }
+    }
+-->

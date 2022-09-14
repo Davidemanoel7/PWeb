@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+#test1{
+    background-color: #413423;
+    padding: 16px;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1{
+    color: #fdc67d;
+    font: normal bolder 3em 'sans-serif';
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut{
+    100% { opacity: 0;}
+    0% {opacity: 1;}
+}
+/* https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
+#test2{
+    background-color: #413423;
+    padding: 16px;
+    visibility: hidden;
+    text-align: center;
+}
+
+button{
+    margin: 8px 16px;
+    padding: 8px 16px;
+    background-color: #ff9100;
+    color: #f0f0f0;
+    font-weight: 900;
+    border-radius: 5px;
+    align-self: auto;
+}
+
+button:hover{
+    background-color: #d17600;
+    
+}

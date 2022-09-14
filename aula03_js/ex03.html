@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="test2">
+        <h1>
+            Guinness
+        </h1>
+    </div>
+    <div>
+        <button id="botaoCarregar">
+            Carregar bebidas
+        </button>
+    </div> 
+</body>
+    <script>
+
+        function carregarDiv(){
+            var div = document.getElementById("test2");
+            if (div.style.visibility === "visible"){
+                div.innerHTML = `<h1> 💀 51 💀 </h1>`
+                div.style.animation = "fadeOut 2s linear"
+                div.style.visibility = "hidden"
+                
+            } else{
+                div.innerHTML = `<h1>😍 Samanaú 😍</h1>`
+                div.style.animation = "fadeIn 2s linear"
+                div.style.visibility = "visible"
+                div.style.transitionDuration = "2s"
+            }
+        }
+        
+        let botao = document.getElementById("botaoCarregar")
+        botao.addEventListener("click",carregarDiv)
+
+    </script>
+</html>

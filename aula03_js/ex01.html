@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div id="test0">
+        
+    </div>
+    <div>
+        <button id="botaoCarregar">
+            Carregar
+        </button>
+    </div>
+</body>
+
+    <script>
+        function carregarDiv(){
+            let div = document.getElementById("test0")
+            div.innerHTML = `<h1>Guinness</h1>`
+        }
+        let botao = document.getElementById("botaoCarregar")
+        botao.addEventListener("click", carregarDiv)
+    </script>
+</html>
