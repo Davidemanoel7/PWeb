@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div id="ex03"></div>
+    <button id="botaoCarregar">Listar cervejas</button>
+    <button id="botaoOrdenar">Ordenar cervejas</button>  
+    
+</body>
+<script>
+        
+    let cervejas = ["Guinness","Skol","Becks","Stella","Hoegaarden","Heineken","Amber Lager"]
+
+    function transf(item){
+        return `<tr><td>${item}</td></tr>`
+    }
+
+    let div1 = document.getElementById("ex03")        
+    function carregarDiv(){
+        let cervejasHtml = cervejas.map(transf)
+        div1.innerHTML = `<table>${cervejasHtml.join("\n")}</table>`
+    }
+    
+    function ordenarDiv(){
+        let cv = cervejas.map(transf).sort()
+        div1.innerHTML = `<table>${cv.join("\n")}</table>`
+    }
+
+    let botaoOrdenar = document.getElementById("botaoOrdenar")
+    botaoOrdenar.addEventListener("click", ordenarDiv)
+
+    let botao = document.getElementById("botaoCarregar")
+    botao.addEventListener("click", carregarDiv)
+
+</script>
+</html>

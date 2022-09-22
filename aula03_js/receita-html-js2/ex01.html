@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios 01</title>
+</head>
+<body>
+    <div id="ex01"></div>            
+    
+    <button id="botaoCarregar">Carregando cervejas</button>
+        
+</body>
+    <script>
+        
+        let cervejas = ["Guinness","Skol","Becks"]
+
+        function transf(item){
+            return `<div>${item}</div>`
+        }
+
+        function carregarDiv(){
+            let div =document.getElementById("ex01")
+            let cervejasHtml = cervejas.map(transf) //map "mapeia" todos os itens de cervejas e guarda-os.
+            div.innerHTML = `${cervejasHtml.join("\n")}`
+        }
+
+        let botao = document.getElementById("botaoCarregar")
+        botao.addEventListener("click", carregarDiv)
+
+    </script>
+</html>

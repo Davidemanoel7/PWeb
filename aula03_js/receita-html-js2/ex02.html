@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="ex02"></div>            
+    
+    <button id="botaoCarregar">Listar cervejas</button>
+        
+</body>
+    <script>
+        
+        let cervejas = ["Guinness","Skol","Becks"]
+
+        function transf(item){
+            return `<div>${item}</div>`
+        }
+
+        function carregarDiv(){
+            let div =document.getElementById("ex02")
+            let cervejasHtml = cervejas.map(transf) //map "mapeia" todos os itens de cervejas e guarda-os.            
+            
+            if(div.style.visibility === "visible"){
+                div.innerHTML = ``
+                div.style.visibility = "hidden"
+            } else {
+                div.style.visibility = "visible"
+                div.innerHTML = `${cervejasHtml.join("\n")}`
+            }
+        }
+
+        let botao = document.getElementById("botaoCarregar")
+        botao.addEventListener("click", carregarDiv)
+
+    </script>
+</html>

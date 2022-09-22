@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita-html-js2</title>
+    <title>Exercício 03</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div id="test1"></div>            
+    <div id="ex03"></div>
+    <button id="botaoCarregar">Carregando cervejas</button>  
+    
 </body>
-<button id="botaoCarregar">Carregando cervejas...</button>
-
 <script>
-
+        
     let cervejas = ["Guinness","Skol","Becks"]
 
     function transf(item){
-        return `<h1>${item}</h1>`
+        return `<tr><td>${item}</td></tr>`
     }
 
+    let div1 = document.getElementById("ex03")        
     function carregarDiv(){
-        let div =document.getElementById("test1")
-        let cervejasHtml = cervejas.map(transf) //map "mapeia" todos os itens de cervejas e guarda-os.
-        div.innerHTML = `${cervejasHtml.join("\n")}`
+        let cervejasHtml = cervejas.map(transf)
+        div1.innerHTML = `<table>${cervejasHtml.join("\n")}</table>`
     }
 
     let botao = document.getElementById("botaoCarregar")
