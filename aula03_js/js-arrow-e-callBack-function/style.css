@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+button{
+    font: normal bold 1.2em 'monospace';
+    padding: 8px 24px;
+    background-color: #3368fa;
+    color: #f0f0f0;
+    border-radius: 10px;
+    border: 0px solid #f0f0ffff;
+    box-shadow:1px 1px 4px #1a1a1a5d;
+}
+
+button:hover{
+    background-color: #042c99;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow e Callback Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="test"></div>
+    <button id="botaoCarregar">Botão</button>  
+    
+</body>
+<script>
+        
+    let nomes = ["Lincoln","David","Caio", "Anna", "Isaias", "Josué", "Gustavo", "Welington"]
+
+    /*const transf = item => {
+        return `<h1>${item}</h1>`
+    }
+    ### Podemos tirar o parêntese (pois só há um argumento como parâmetro...)*/
+    
+    /*
+    const transf = item => `<h1>${item}</h1>`
+    ### Transformamos em uma função anônima, pois não te nome, apenas definição e retorno... Dessa forma:
+    item => `<h1>${item}</h1>`
+    Dessa nova forma, chamamos de "Lambda Function ou Lambda Expression"
+    */
+    const cDiv = cervs => {
+        const va = document.getElementById("test")
+        va.innerHTML = cervs.map(cervs => `<h1>${cervs}</h1>`).join("\n")
+    }
+    /*
+    const carregarDiv = cervs => {
+        const va = document.getElementById("test")
+        va.innerHTML = cervs.map(item => `<h1>${item}</h1>`).join("\n")
+    }
+    */
+    let botao = document.getElementById("botaoCarregar")
+    botao.addEventListener("click", cDiv)
+
+</script>
+</html>
