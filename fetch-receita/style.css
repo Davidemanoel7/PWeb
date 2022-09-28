@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+  padding: 0px;
+  margin: 0px;
+}
+table{
+  border-collapse: collapse;
+}
+tr td {
+  background-color: rgb(221, 243, 255);
+  color: #1a1a1a;
+  font: normal bold 1.3em 'sans-serif';
+  border: 1px solid #1a1a1a;
+  border-collapse: collapse;
+  padding: 8px 16px;
+}
+button{
+  padding: 8px 24px;
+  margin: 16px auto;
+  font: normal bold 1.2em 'monospace';
+  color:rgb(255, 255, 221);
+  background-color: #84adf8;
+  border: 0px solid #1a1a1a;
+  border-radius: 8px;  
+}
+button:hover{
+  background-color: #165cdf;
+}
