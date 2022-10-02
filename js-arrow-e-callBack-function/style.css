@@ -7,9 +7,41 @@ button{
     color: #f0f0f0;
     border-radius: 10px;
     border: 0px solid #f0f0ffff;
-    box-shadow:1px 1px 4px #1a1a1a5d;
+    box-shadow:1px 1px 4px #1a1a1aa0;
+    display: inline-block;
+    align-items: center;
 }
 
 button:hover{
-    background-color: #042c99;
+    background-color: #0f41ca;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 16px auto;
+}
+
+tr td {
+    padding: .5vh 30vh;
+    border-collapse: collapse;
+    border: 1px solid #1a1a1a;
+    font: normal bold 1.4em 'monospace';
+    text-align: center;
+}
+
+a{
+    font: normal bold 1.2em 'monospace';
+    padding: 8px 24px;
+    background-color: #3368fa;
+    color: #f0f0f0;
+    border-radius: 10px;
+    border: 0px solid #f0f0ffff;
+    box-shadow:1px 1px 4px #1a1a1aa0;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: #0f41ca;
 }

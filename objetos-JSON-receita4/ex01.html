@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div><button id="botaoCarregar">Carregar cervejas</button></div>
+    <div id="cervejasDiv"></div>            
+</body>
+<script>
+    let cervejas = [
+
+        {name: "Guiness",
+        alcohol: "15%"}, 
+
+        {name: "Desperados",
+        alcohol: "10%"},
+
+        {name: "Becks",
+        alcohol: "5%"},
+
+        {name: "Skol",
+        alcohol: "5%"},
+
+        {name: "Pitú",
+        alcohol: "55%"},
+
+        {name: "Carangueijo",
+        alcohol: "59%"},
+    ]
+
+    const carregarDiv = cs => {
+       const div = document.getElementById("cervejasDiv")
+       const itensHtml = cs.map( item => `<tr><td>${item['name']}</td> <td>${item['alcohol']}</td></tr>` ) 
+       div.innerHTML = `<table> <td id="cab">Name</td> <td id="cab">Alcool</td> ${itensHtml.join("\n")}</table>`
+    }
+    let botao = document.getElementById("botaoCarregar")
+    botao.addEventListener("click", () => carregarDiv(cervejas) )                 
+</script>
+</html>

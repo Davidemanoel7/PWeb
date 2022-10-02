@@ -8,28 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="test"></div>
-    <button id="botaoCarregar">Carregar</button>  
-    
+    <button id="botaoCarregar">Carregar</button>
+    <div id="test"></div>   
 </body>
 <script>
-        
-    let nomes = ["Lincoln","David","Caio", "Anna", "Isaias", "Josué", "Gustavo", "Welington"]
-
-    const cDiv = (cervs) => {
-        const varb = document.getElementById("test")
-        const varbHtml = cervs.map((item) => `<tr><td> ${item} </td></tr>`).join("\n")
-        va.innerHTML = `<table>${vaHtml}</table>`
+    
+    let cervejas = ["Guinness","Skol","Becks","Stella","Hoegaarden","Heineken","Amber Lager"]
+    
+    const carregarDiv = (cervs) => {
+        let divA = document.getElementById("test")
+        let divAHtml = cervs.map((item) => `<tr><td>${item}</td></tr>`)
+        divA.innerHTML = `<table>${divAHtml.join("\n")}</table>`
     }
-
-    /*
-    const carregarDiv = (name) => {
-        const div = document.getElementById("test")
-        const nHtml = name.map((item) => `<tr><td> ${item} </td></tr>`).join("\n")
-        div.innerHTML = `<table>${nHtml}</table>`
-    }
-    */
-
-    let botao = document.getElementById("botaoCarregar").addEventListener("click", cDiv)
+    
+    let botao = document.getElementById("botaoCarregar").addEventListener("click", () => carregarDiv(cervejas))
 </script>
 </html>

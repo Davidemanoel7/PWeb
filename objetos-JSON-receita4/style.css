@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 16px auto;
+}
+
+tr td {
+    font: normal bold 1.2em 'monospace';
+    padding: 10px 24px;
+    border: 1px ridge #1a1a1a;
+    margin: 10px auto;
+    align-content: center;
+}
+
+button{
+    border: 0px none #e49400;
+    border-radius: 8px;
+    display: flex;
+    background-color: #ffc964;
+    color: #1a1a1a;
+    font: normal bolder 1.5em 'monospace';
+    padding: 8px 16px;
+    margin: 16px auto;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #e49400;
+}
+
+#cab{
+    background-color: #e49400;
+    color: aliceblue;
+}

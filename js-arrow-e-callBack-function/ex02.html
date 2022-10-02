@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="botaoCarregar">Ver nomes</button>
+    <button id="botaoOrdenar">Ordenar nomes</button> 
+    <button id="botaoMisturar">Misturar nomes</button>
+    <div id="ex03"></div>
+</body>
+
+<script>
+        
+    let nomes = ["David","Stela","Breno","Ana","John","Henrique","Arthur", "Zeus"];
+
+    const carregDiv = (anyArray)=>{
+        let aHtml = anyArray.map(item =>`<tr><td>${item}</td></tr>`)
+        document.getElementById("ex03").innerHTML =`<table>${aHtml.join("\n")}</table>`
+    }
+
+    const ordDiv = (anyArray) =>{
+        let aHtml = anyArray.map( item => `<tr><td>${item}</td></tr>`).sort()
+        document.getElementById("ex03").innerHTML =`<table>${aHtml.join("\n")}</table>`
+    }
+
+    const mistDiv = (anyArray) =>{
+        let aHtml = anyArray.map( item=> `<tr><td>${item}</td></tr>`).sort(()=> 0.5 - Math.random())
+        document.getElementById("ex03").innerHTML =`<table>${aHtml.join("\n")}</table>`
+    }
+
+    let botaoOrdenar = document.getElementById("botaoOrdenar").addEventListener("click", () => ordDiv(nomes))
+    let botaoCarregar = document.getElementById("botaoCarregar").addEventListener("click", () => carregDiv(nomes))
+    let botMisturar = document.getElementById("botaoMisturar").addEventListener("click", () => mistDiv(nomes))
+
+</script>
+</html>

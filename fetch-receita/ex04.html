@@ -14,6 +14,10 @@
 <script>
   let user = []
   //cs é um array de cervejas
+
+  const a = (item) => `<tr><td>${item}</td></tr>`
+  //usar como referencia
+
   const carregarDiv = cs => {
      const div = document.getElementById("randomDiv")
      const itensHtml = cs.map( ({first_name,last_name,email,phone_number}) => `<tr> <td>${first_name}</td> <td>${last_name}</td> <td>${email}</td> <td>${phone_number}</td> </tr>` ) 
