@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 02</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,33 +17,45 @@
 
         {name: "Guiness",
         alcohol: "15%",
+        style: "English IPA",
+        ibu:"15"
         }, 
 
         {name: "Desperados",
         alcohol: "10%",
+        style:"Cream Ale",
+        ibu:"20"
         },
 
         {name: "Becks",
         alcohol: "5%",
+        style:"Pilsen",
+        ibu:"30"
         },
 
         {name: "Skol",
         alcohol: "5%",
+        style:"Lager",
+        ibu:"25"
         },
 
         {name: "Pitú",
         alcohol: "55%",
+        style:"APA",
+        ibu:"15"
         },
 
         {name: "Carangueijo",
         alcohol: "59%",
+        style:"APA",
+        ibu:"45"
         },
     ]
 
     const carregarDiv = cs => {
        const div = document.getElementById("cervejasDiv")
-       const itensHtml = cs.map( item => `<tr><td>${item['name']}</td> <td>${item['alcohol']}</td></tr>` ) 
-       div.innerHTML = `<table> <td id="cab">Name</td> <td id="cab">Alcool</td> ${itensHtml.join("\n")}</table>`
+       const itensHtml = cs.map( ({name, alcohol, style, ibu}) => `<tr><td>${name}</td> <td>${alcohol}</td> <td>${style}</td> <td>${ibu}</td> </tr>`) 
+       div.innerHTML = `<table> <td id="cab">Nome</td> <td id="cab">Álcool</td> <td id="cab">Estilo</td><td id="cab">Amargor</td>${itensHtml.join("\n")}</table>`
     }
     let botao = document.getElementById("botaoCarregar")
     botao.addEventListener("click", () => carregarDiv(cervejas) )                 

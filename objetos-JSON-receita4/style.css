@@ -18,6 +18,10 @@ tr td {
     align-content: center;
 }
 
+tr:hover{
+    color: #e49400;
+}
+
 button{
     border: 0px none #e49400;
     border-radius: 8px;

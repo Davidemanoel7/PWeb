@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="usersDiv"></div>
-    <div><button id="botaoCarregar">Carregar cervejas</button></div>
+    <div><button id="botaoCarregar">Ver usuários</button></div>
 </body>
 <script>
   let user = []
@@ -21,7 +21,7 @@
   }
 
   async function carregarUser(){
-    try{let res = await fetch("https://random-data-api.com/api/v2/users?size=5")
+    try{let res = await fetch("https://random-data-api.com/api/v2/users?size=10")
     user = await res.json()
     carregarDiv(user)    
   }catch(err){
