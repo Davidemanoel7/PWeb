@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita React-01 - Ex01</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="libs/react.js"></script>
+    <script src="libs/react-dom.js"></script>
+    <script src="libs/babel.js"></script>
+    
+    <script type="text/babel">
+        
+        const tabelaBebidas = () => {
+            return <div>
+                    <table id="tabela" border="1">
+                        <thead>
+                            <tr><th>Nome</th><th>Marca</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
+
+                            <tr><td>Cachaça Samanau</td><td>Engenho Samanaú Caicó</td></tr>
+
+                            <tr><td>51</td><td>Casa do Bolsonaro?</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+        }
+
+        ReactDOM.render(
+            tabelaBebidas()
+            ,document.getElementById("app")
+        )        
+    </script>
+</body>
+</html> 

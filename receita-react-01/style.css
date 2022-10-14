@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+table {
+    border-collapse: collapse;
+    margin: 16px;
+}
+th {
+    background-color: #f0b623;
+    padding: 8px 24px;
+    font: normal bold 1.3em 'monospace';
+}
+
+td{
+    font: normal 500 1em 'monospace';
+    border: 1px solid #1a1a1a;
+    border-collapse: collapse;
+    padding: 8px 16px;;
+}
+
+button{
+    border: 0px;
+    border-radius: 8px;
+    padding:8px 24px;
+    font: normal 600 1.2em 'monospace';
+    color: #1a1a1a;
+    background-color: #f0b623;
+}
+
+button:hover{
+    background-color: #dfa411;
+}

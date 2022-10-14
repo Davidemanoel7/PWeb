@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font: normal bold 2em 'monospace';
+    margin: 8px 16px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    padding: 16px 16px;
+    font: normal bold 1.3em 'monospace';
+}
+
+tr td {
+    padding: 8px 16px;
+    border-collapse: collapse;
+}
+
+button{
+    margin: 8px 16px;
+    padding: 8px 24px;
+    border-radius: 10px;
+    border : 0px;
+    color: #f0f0f0;
+    background-color: rgb(26, 102, 245);
+    font: normal bold 1.1em 'monospace';
+}
+button:hover{
+    background-color: rgb(2, 68, 190);
+}
+
+a{
+    margin:10px 10px;
+    font: normal bold 1.1em 'monospace';
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(0, 0, 121);
+}

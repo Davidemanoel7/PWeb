@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita 02 - Ex 01</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/react.js"></script>
+    <script src="libs/react-dom.js"></script>
+    <script src="libs/babel.js"></script>
+</head>
+<body>
+    <div id="app"></div>       
+
+    <script type="text/babel">
+
+        class TabelaBebidas extends React.Component{
+            render(props){
+                return (
+                    <div>
+                        <h1>Tabela de bebidas</h1>
+                        <table id="tabela" border="1">
+                            <thead>
+                                <tr><th>Nome</th><th>Marca</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                )
+            }
+        }
+
+        class BotaoC extends React.Component{
+            render(){
+                return(
+                    <button onClick={()=>alert("Você clicou no botão!")}>
+                        Não clique
+                    </button>
+                )
+            }
+        }
+
+        class Link extends React.Component{
+            render(){
+                return(
+                    <a href="https://www.w3schools.com/" target="blank"><br/>Visit W3Schools<br/></a>
+                )
+            }
+        }
+
+        
+        ReactDOM.render(
+            <div id="minhaDiv">
+                <TabelaBebidas/>
+                <BotaoC/>
+                <Link/>
+            </div>
+            ,document.getElementById("app")
+        )
+    </script>
+</body>
+</html>
