@@ -19,10 +19,11 @@ button{
   margin: 16px auto;
   font: normal bold 1.2em 'monospace';
   color:rgb(255, 255, 221);
-  background-color: #84adf8;
+  background-color: #226fff;
   border: 0px solid #1a1a1a;
   border-radius: 8px;  
 }
 button:hover{
-  background-color: #165cdf;
+  background-color: #084ac4;
+  cursor:pointer;
 }
