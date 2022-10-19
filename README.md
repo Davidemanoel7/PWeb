@@ -8,4 +8,4 @@
   <img align="center" alt="DavidEm-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="DavidEm-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
   
-## Os exercícios propostos referem-se à página de [receitas](https://sites.google.com/view/fabricio10)
+## Os exercícios propostos referem-se à página de [receitas](https://sites.google.com/view/fabricio10/p%C3%A1gina-inicial/cursos/pweb?authuser=0)
