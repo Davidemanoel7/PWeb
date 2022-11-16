@@ -4,7 +4,7 @@ export default function MoviesEx03({data}){
             <div>
                 <h2>Exercício 03</h2>
                 <input id="searchBox" type="text" placeholder="search here..."></input>
-                <button>Search</button>
+                <button onClick={() => alert("Clicou...")}>Search</button>
                 <div>
                     {data.Search.map((m) => <div>{m.Title} - {m.Year}</div>)}
                 </div>

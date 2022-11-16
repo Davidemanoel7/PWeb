@@ -1,6 +1,9 @@
 {
-  "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/movies2": "pages/movies2.js"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/movies3": "pages/movies3.js",
+  "/": "pages/index.js",
+  "/ex03": "pages/ex03.js",
+  "/ex02": "pages/ex02.js"
 }
